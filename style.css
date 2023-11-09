@@ -1,77 +1,49 @@
-body{
-    background-color: rgb(127, 255, 242);
-    font-family: 'Roboto Slab', serif;
-    margin: 50px 50px;
-    display:flex;
-    flex-direction: column;
-    min-height: 100vh;
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
-.main{
-    flex: 1;
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-h1{
-    font-size: 4rem;
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
 }
-h2{
-    margin-top: 0px;
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
 }
-footer{
-    text-align: center;
-    color:blue;
+
+.container{
+  justify-content: center;
+  align-items: center;
 }
-#innovative{
-    color: rgba(0, 0, 255, 0.537);
+
+.dog{
+  border-radius: 50%;
+  height: 100px;
 }
-.logo{
-    width:200px;
+
+.tes{
+  height: 30px;
 }
-.card{
-    width: 45%;
-}
-.title-img{
-    margin-right: 50px;
-    margin-bottom: 12px;
-    height:200px;
-    width:300px;
-    float:left;
-}
-.flower,.palette{
-    float: left;
-}
-.construct,.tech{
-    float:right;
-}
-.palette,.tech{
-    margin-top: 50px;
-}
-@media(max-width:680px) {
-    body{
-        background-color: rgba(0, 255, 255, 0.92);
-    }
-    .logo{
-        width:30%;
-    }
-    h1{
-        font-size: 2rem;
-        text-align: center;
-    }
-    .card{
-        width:100%;
-        text-align: justify;
-        display:block;
-    }
-    .card img{
-        display:inline;
-        width:100%;
-        object-fit: cover;
-    }
-    .construct,.tech{
-        float:none;
-    }
-    .card > img{
-        margin-top: 30px;
-    }
-    .palette > img{
-        margin-top: -20px;
-    }
+
+@media(max-width: 991px) {
+  .bet_pad{
+    padding-bottom: 50px;
+  }
 }
