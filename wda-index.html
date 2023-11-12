@@ -7,7 +7,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    
+    <style>
+      body{
+    background-color: rgb(127, 255, 242);
+    font-family: 'Roboto Slab', serif;
+    margin: 50px 50px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main{
+    flex: 1;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    margin-top: 0px;
+}
+footer{
+    text-align: center;
+    color:blue;
+}
+#innovative{
+    color: rgba(0, 0, 255, 0.537);
+}
+.logo{
+    width:200px;
+}
+.card{
+    width: 45%;
+}
+.title-img{
+    margin-right: 50px;
+    margin-bottom: 12px;
+    height:200px;
+    width:300px;
+    float:left;
+}
+.flower,.palette{
+    float: left;
+}
+.construct,.tech{
+    float:right;
+}
+.palette,.tech{
+    margin-top: 50px;
+}
+@media(max-width:680px) {
+    body{
+        background-color: rgba(0, 255, 255, 0.92);
+    }
+    .logo{
+        width:30%;
+    }
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .card{
+        width:100%;
+        text-align: justify;
+        display:block;
+    }
+    .card img{
+        display:inline;
+        width:100%;
+        object-fit: cover;
+    }
+    .construct,.tech{
+        float:none;
+    }
+    .card > img{
+        margin-top: 30px;
+    }
+    .palette > img{
+        margin-top: -20px;
+    }
+}   
+    </style>
   </head>
 
    <body>
